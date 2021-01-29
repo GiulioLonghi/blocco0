@@ -1,9 +1,4 @@
-/*Scrivere un programma che stampa la tabella ASCII in questo formato, limitandosi alle lettere maiuscole,
-minuscole e le dieci cifre:
-CHAR: A ASCII: 65
-CHAR: B ASCII: 66
-CHAR: C ASCII: 67*/
-
+//OK
 #include <iostream>
 using namespace std;
 

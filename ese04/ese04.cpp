@@ -1,6 +1,4 @@
-/*Scrivere un programma che chide all'utente di inserire due interi, 
-e poi scrive il numero più grande seguito dalla string " is larger". 
-Se i due numeri sono uguali, scrivi il messaggio " These numbers are equal".*/
+//OK
 #include <iostream>
 using namespace std;
 

@@ -1,27 +1,42 @@
-/*Scrivere un programma che legge tre numeri e calcola la somma, 
-la media, il prodotto, il più grande e il più piccolo..*/
+//OK
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int num1, num2;
-    cout<<"Digitare due numeri da tastiera"<<endl;
-    cin>>num1>>num2;
+    int num1, num2, num3;
+    cout<<"Digitare tre numeri da tastiera"<<endl;
+    cin>>num1>>num2>>num3;
 
-    int somma=num1+num2;
+    int somma=num1+num2+num3;
 
-    cout<<"La somma dei due numeri e': "<<somma<<endl;
+    cout<<"La somma dei tre numeri e': "<<somma<<endl;
 
-    cout<<"La media dei due numeri e': "<<somma/2<<endl;
+    cout<<"La media dei tre numeri e': "<<somma/3<<endl;
 
-    cout<<"Il prodotto dei due numeri e': "<<num1*num2<<endl;
+    cout<<"Il prodotto dei tre numeri e': "<<num1*num2<<endl;
 
-    if (num1<num2)
-        cout<<num1<<" e' il piu piccolo e "<<num2<<" il piu grande"<<endl;
-    else
-        cout<<num2<<" e' il piu piccolo e "<<num1<<" il piu grande"<<endl;
-    return 0;
+    if (num1>num2){
+        if (num1>num3)
+            cout << "Max = " << num1 << endl;
+        else
+            cout << "Max = " << num3 << endl;
+        if (num2>num3)
+            cout << "Min = " << num3 << endl;
+        else
+            cout << "Min = " << num2 << endl;
+
+    } else {
+        if (num1<num3)
+            cout << "Min = " << num1 << endl;
+        else
+            cout << "Min = " << num3 << endl;
+        if (num2>num3)
+            cout << "Max = " << num2 << endl;
+        else
+            cout << "Max = " << num3 << endl;
+    }
+
 }
 
 

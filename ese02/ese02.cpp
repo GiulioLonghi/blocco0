@@ -1,5 +1,4 @@
-/*Scrivere un programma che chiede all'utente due numeri 
-e ne calcola somma, prodotto, differenza, divisionee resto*/
+//OK
 #include <iostream>
 using namespace std;
 

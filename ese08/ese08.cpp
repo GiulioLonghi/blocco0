@@ -1,31 +1,30 @@
-/*Scrivere un programma che prende due numeri interi e determina se il primo è un multiplo del secondo*/
-
+//OK
 #include <iostream>
 using namespace std;
-
-void scambia (int& a, int& b);
 
 int main()
 {
     int num1, num2;
-    cout<<"Inserire due numeri inter1: "<<endl;
     cin>>num1>>num2;
 
-    //verificare se num1 più grande di num2, se lo è scambiali
-    if (num1>num2)
-        scambia (num1, num2);
+    bool is_multiple = false;
 
-    
-    cout<<num1;
-    cout<<num2;
-        
+    int min = (num1<num2)? num1:num2;
+    int max;
+
+    if (min==num1)
+        max = num2;
+    else
+        max = num1;
+
+    is_multiple = (max % min == 0)? true : false;
+
+    if (is_multiple == true)
+        cout << max << " is a multiple of " << min <<endl;
+    else
+        cout << max << " is not a multiple of " << min <<endl;
+
     return 0;
 }
 
-void scambia (int& a, int& b)
-{
-    int c;
-    c=a;
-    a=b;
-    b=c;
-}
+

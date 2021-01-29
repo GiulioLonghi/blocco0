@@ -1,6 +1,4 @@
-/*Scrivere un programma che prende un intero e verifica se questo è pari o dispari e scrive qualcosa a
-proposito.*/
-
+//OK
 #include <iostream>
 using namespace std;
 
